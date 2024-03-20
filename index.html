@@ -6,14 +6,16 @@
     <style>
         /* Style the canvas to cover the entire viewport */
         canvas {
-            position: absolute;
+            position: 0 0 -4 ;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            position="0 0 -4"
+            rotation="-90 0 0"
+            material="src: #texture; displacementMap: #heightmap; displacementScale: 50000000
         }
     </style>
-
   <title>A-Frame Super Shooter Kit - Basic</title>
   <meta charset="utf-8">
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
@@ -109,7 +111,7 @@
         <a-entity geometry="primitive: plane; width: 100; height: 100"
                   position="0 0 -4"
                   rotation="-90 0 0"
-                  material="src: #texture; displacementMap: #heightmap; displacementScale: 50000000">
+                  material="src: #texture; displacementMap: #heightmap; displacementScale: 500">
         </a-entity>
         <!-- Ambient Light -->
         <a-entity light="type: ambient; color: #CCC; intensity: 0.5" rotation="-90 0 0"></a-entity>
